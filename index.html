@@ -1,87 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página web</title>
-  </head>
-  <style>
-    a {
-      text-decoration: none;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+</head>
+<style>
+    * {
+        background-color: #111827;
+        color: white;
+        font-family: Helvetica, sans-serif;
     }
-  </style>
-  <body>
-    <h1>Página web</h1>
-    <h2>Esta es una página web</h2>
-    <h3>Esta es una página web</h3>
-    <h4>Esta es una página web</h4>
-    <h5>Esta es una página web</h5>
-    <h6>
-      <a href="./galeria.html">
-        Galeria de RRSS
-      </a>
-    </h6>
-    <p>
-      <strong>
-        <i>
-          <u>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
-            corporis tenetur praesentium aliquid amet aspernatur ea eius architecto
-            officia ipsam! Sequi minima temporibus corporis magni. Laboriosam quas
-            saepe et sit!
-          </u>
-        </i>
-      </strong>
-    </p>
-    <br/>
-    <img
-      src="https://www.planbapp.es/wp-content/uploads/2020/10/75397770_2900399459992466_5624660925703511230_n.jpg"
-      alt="Castillo de Neuschwastein"
-      width="200"
-      height="200"
-    />
-    <p>
-      <img
-        src="./assets/img/Barcelona Montserrat Spain (2).jpg"
-        alt="Monasterio de Montserrat"
-        width="200"
-        height="200"
-      />
-    </p>
-    <div style="border: solid">
-      <h1 style="border: solid red">Un div</h1>
-      <p style="border: solid blue">Un párrafo</p>
-      <img
-        src="https://elclubdellibro.files.wordpress.com/2017/12/catedral.jpg"
-        alt="Catedral de kingsbridge"
-        width="100"
-        style="border: solid blueviolet"
-      />
-      <img
-        src="https://elclubdellibro.files.wordpress.com/2017/12/catedral.jpg"
-        alt="Catedral de kingsbridge"
-        width="100"
-        style="border: solid green"
-      />
-    </div>
+    a {
+        text-decoration: none;
+    }
+    .proyects{
+        width: 200px;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Proyectos</a></li>
+            <li><a href="">Habilidades</a></li>
+            <li><a href="">Contacto</a></li>
+    </ul>
+    </nav>
     <section>
-      <div>
-        <a
-          href="https://www.facebook.com/"
-          style="border: solid"
-          target="_blank"
-        >
-          <img
-            src="https://cdn.icon-icons.com/icons2/1238/PNG/512/weblink_83665.png"
-            alt=""
-            width="20"
-          />
-          Facebook
-        </a>
-      </div>
+        <div>
+            <p>👋Hola soy</p>
+            <h1>Paulo</h1>
+            <p>Soy desarrollador web</p>
+        </div>
+        <div>
+            <img src="./assets/svg/landing/coding.svg" alt="">
+        </div>
     </section>
     <section>
-
+        <h2>Proyectos</h2>
+        <div>
+            <img src="./assets/svg/projects/card_preview_desktop.svg" alt="Vista previa 1" class="project"/>
+            <img src="./assets/svg/projects/card_preview_desktop_1.svg" alt="Vista previa 2"class="project"/>
+        </div>
+        <div>
+            <div><img src="./assets/svg/projects/card_preview_desktop_2.svg" alt="Vista previa 3" class="project"/>
+            <div><img src="./assets/svg/projects/card_top_desktop.svg" alt="Vista previa 4" class="project"/>
+        </div>
     </section>
-  </body>
+    <section>
+        <h2>Habilidades</h2>
+        <div>
+            <span><img src="./assets/svg/habilities/docker.svg" alt=""/>Docker</span>
+            <span><img src="./assets/svg/habilities/HTML5.svg" alt=""/>HTML 5</span>
+            <span><img src="./assets/svg/habilities/typescript.svg" alt=""/>Typescript</span>
+            <span><img src="./assets/svg/habilities/mongodb.svg" alt=""/>MongoDB</span>
+        </div>
+        <div>
+            <span><img src="./assets/svg/habilities/git.svg" alt="">Git</span>
+            <span><img src="./assets/svg/habilities/css.svg" alt="">CSS 3</span>
+            <span><img src="./assets/svg/habilities/reactjs.svg" alt="">React</span>
+            <span><img src="./assets/svg/habilities/mssql.svg" alt="">MSSQL</span>
+        </div>
+        <div>
+            <span><img src="./assets/svg/habilities/figma.svg" alt=""/>Figma</span>
+            <span><img src="./assets/svg/habilities/tailwind.svg" alt=""/>TailwindCSS</span>
+            <span><img src="./assets/svg/habilities/vue.svg" alt=""/>Vue</span>
+            <span><img src="./assets/svg/habilities/pgsql.svg" alt=""/>PostgreSQL</span>
+        </div>
+        <div>
+            <span><img src="./assets/svg/habilities/node-js.svg" alt="">Node.JS</span>
+            <span><img src="/assets/svg/habilities/javascript.svg" alt="">JavaScrpit</span>
+            <span><img src="./assets/svg/habilities/nestjs.svg" alt="">Nest.JS</span>
+        </div>
+    </section>
+    <section>
+        <h2>Contacto</h2>
+        <div>
+            <img src="./assets/svg/contact/GitHub_1.svg" alt="github">
+            <img src="./assets/svg/contact/Linkedin.svg" alt="linkedin">
+            <img src="./assets/svg/contact/outlook.svg" alt="outlook">
+        </div>
+    </section>
+</body>
 </html>
