@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Paulo Panduro - Mi portafolio web"/>
+    <meta property="og:description" content="Este es mi primer portafolio web, donde subire todos mi proyectos"/>
+    <meta property="og:image" content="#">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https:///paul0pv.github.io/codigo-15/"/>
+    <meta property="keywords" content="Paulo Panduro, Javascript, Tecsup, Codigo, Full Stack">
+    <title>Formularios</title>
+  </head>
+  <style>
+    * {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <body>
+    <h1>Formularios</h1>
+    <form action="">
+        <p>
+            <input type="text" placeholder="Nombre" name="name"/>
+          </p>
+          <p>
+            <input type="text" placeholder="Apellido" name="surname"/>
+          </p>
+          <p>
+            <input type="email" placeholder="Correo" name="email"/>
+          </p>
+          <p>
+            <input type="date" placeholder="Fecha de nacimiento" name="born_date" />
+          </p>
+          <p>
+            <input type="number" placeholder="DNI" name="dni" />
+          </p>
+          <p>
+            <input type="tel" placeholder="Teléfono" name="phone"/>
+          </p>
+          <p>
+            <input type="password" placeholder="Contraseña" name="password"/>
+          </p>
+          <p>Género</p>
+          <p>
+            <label for="masculino">
+              Masculino
+              <input type="radio" name="genero" value="masculino"/>
+            </label>
+            <label for="">
+              Femenino
+              <input type="radio" name="genero" value="femenino"/>
+            </label>
+            <label for="">
+              Otro
+              <input type="radio" name="genero" value="otro"/>
+            </label>
+          </p>
+          <input type="text" value="peru" readonly/>
+          <p>País</p>
+          <select name="pais" id="pais">
+              <option value="" disabled selected></option>
+              <option value="pe">Perú</option>
+              <option value="ar">Argentina</option>
+              <option value="co">Colombia</option>
+              <option value="ch">Chile</option>
+          </select>
+          <p>Ciudad</p>
+          <select name="ciudad" id="ciudad">
+              <option value="" disabled selected></option>
+              <option value="li">Lima</option>
+              <option value="ba">Buenos Aires</option>
+              <option value="bo">Bogotá</option>
+              <option value="sa">Santiago</option>
+              <option value="ot">Otro</option>
+          </select>
+          <p>Cursos</p>
+          <p>
+              <p>
+                  JavaScrpit
+                  <input type="checkbox" name="curso_1"/>
+                </p>
+            <p>
+              HTML
+              <input type="checkbox" name="curso_2"/>
+            </p>
+            <p>
+              CSS
+              <input type="checkbox" name="curso_3"/>
+            </p>
+            <p>
+              React JS
+              <input type="checkbox" name="curso_4"/>
+            </p>
+            <p>
+              Node js
+              <input type="checkbox" name="curso_5"/>
+            </p>
+          </p>
+          <p>
+              <input type="submit" placeholder="Enviar" name="send"/>
+            </p>
+    </form>
+  </body>
+</html>
