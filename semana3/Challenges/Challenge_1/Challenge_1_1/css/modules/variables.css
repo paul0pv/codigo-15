@@ -1,0 +1,8 @@
+:root{
+    scroll-behavior: smooth;
+    --primary-text-color: hsl(220, 15%, 55%);
+    --primary-theme-color: hsl(0, 0%, 100%);
+    --secondary-theme-color: hsl(213, 19%, 18%, 0.5);
+    --solid-background-color: hsl(212, 45%, 89%);
+    --title-text-color: hsl(218, 44%, 22%);
+}

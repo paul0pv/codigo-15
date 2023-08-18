@@ -1,0 +1,33 @@
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    text-align:justify;
+  }
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  input {
+    border: 0.125 solid gray;
+    border-radius: 5px;
+
+}
+
+button {
+background-color: blueviolet;
+}

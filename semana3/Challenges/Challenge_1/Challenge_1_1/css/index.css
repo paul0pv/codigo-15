@@ -1,0 +1,17 @@
+@import './modules/animations.css';
+@import './modules/variables.css';
+@import './modules/layout.css';
+@import './modules/cards.css';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+.body {
+  background-color: var(--solid-background-color);
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+} 
+
+.main {
+  overflow: hidden;
+  font-size: 15px;
+}
+

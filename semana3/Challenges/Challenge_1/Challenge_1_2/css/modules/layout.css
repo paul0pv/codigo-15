@@ -1,0 +1,12 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--solid-background-color);
+  }
+
+
+@media (min-width: 1440px) {
+
+  }
