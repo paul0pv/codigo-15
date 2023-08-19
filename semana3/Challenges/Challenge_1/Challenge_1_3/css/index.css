@@ -1,4 +1,3 @@
-@import './modules/animations.css';
 @import './modules/variables.css';
 @import './modules/layout.css';
 @import './modules/cards.css';
@@ -6,13 +5,14 @@
 @import './modules/fonts.css';
 @import './modules/form.css';
 
-.body {
+
+body {
   background-color: var(--solid-background-color);
-  margin: 0;
   font-family: 'Ubuntu', sans-serif;
+  margin: 0;
 } 
 
-.main {
+section {
   overflow: hidden;
   font-size: 10px;
 }

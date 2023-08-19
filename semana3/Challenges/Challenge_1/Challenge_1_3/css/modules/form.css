@@ -1,33 +1,52 @@
 form {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
-    text-align:justify;
-  }
-
-fieldset {
-    border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
-  }
-
-  fieldset:last-of-type {
-    border-bottom: none;
-  }
-  
-  label {
-    display: block;
-    margin: 0.5rem 0;
-  }
-
-  input {
-    border: 0.125 solid gray;
-    border-radius: 5px;
-
+  text-align: justify;
 }
 
-button {
-background-color: blueviolet;
+fieldset {
+  border: none;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13.5px;
+  font-family: "ubuntu", sans-serif;
+  color: var(--secondary-theme-color);
+  font-weight: bold;
+}
+
+.no_border {
+  padding: 0;
+  border-bottom: none;
+  border-top: none;
+}
+
+.input {
+  border: 0.125px solid gray;
+  border-radius: 5px;
+  padding: 1em;
+  text-align: justify;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+.container_submit {
+  text-align: right;
+}
+
+.button {
+  border: none;
+  border-radius: 2.5px;
+  padding: 1em 1.5em;
+  margin: 1em 0;
+  color: var(--primary-theme-color);
+  background-color: var(--secondary-theme-color);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.label > input:hover {
+border: 1.5px solid var(--input-deco-color);
 }
