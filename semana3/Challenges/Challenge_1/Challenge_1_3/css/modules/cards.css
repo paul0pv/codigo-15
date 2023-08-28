@@ -64,9 +64,6 @@ border: 0.625px solid var(--title-text-color);
 border-radius: 50%;
 }
 
-.card__author .card__author{
-
-}
 
 .card__author {
   color: var(--title-text-color);

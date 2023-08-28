@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header menu menu menu' 
+    'hero hero hero hero'
+    'main main empty image'
+    'main main empty extra'
+    'banner banner banner banner';
+    text-align: justify;
+}
+
+.container div {
+    border: 0.125px solid grey;
+    padding: 10px;
+    color: gray;
+}
+
+h1 {
+display: block;
+}
+
+.header {
+    background-color: antiquewhite;
+    grid-area: header;
+    height: 5vh;
+}
+
+.menu {
+    background-color: brown;
+    grid-area: menu;
+}
+
+.hero {
+    background-color: chocolate;
+    grid-area: hero;
+    height: 40vh;
+}
+
+.main {
+    background-color: blanchedalmond;
+    grid-area: main;
+    height: 20vh;
+}
+
+.empty {
+background-color:darkgoldenrod;
+grid-area: empty;
+}
+
+.image {
+    background-color: floralwhite;
+    grid-area: image;
+}
+
+.extra {
+background-color: maroon;
+grid-area: extra;
+}
+
+.banner {
+    background-color: lightgoldenrodyellow;
+    grid-area: banner;
+    height: 10vh;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        grid-template-areas: 
+    'header'
+    'menu'
+    'hero'
+    'main'
+    'empty'
+    'banner'
+    'extra'
+    'image';
+    }
+
+    .hero {
+        height: 10vh;
+    }
+    .main {
+        height: 20vh ! important;
+    }
+}
