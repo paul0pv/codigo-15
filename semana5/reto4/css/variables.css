@@ -1,0 +1,9 @@
+:root {
+    scroll-behavior: smooth;
+    --primary-font-family: 'Inter', sans-serif;
+    --dark-blue-color: hsl(240, 100%, 5%);
+    --gray-color: hsl(233, 8%, 79%);
+    --dark-gray-color: hsl(236, 13%, 42%);
+    --red-color: hsl(5, 85%, 63%);
+    --orange-color: hsl(35, 77%, 62%);
+}

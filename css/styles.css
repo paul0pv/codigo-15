@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding: 30px;
+}
+
+.container__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  align-self: end;
+  align-items: center;
+  gap: 20px;
+  color: var();
+  list-style: none;
+}
+
+.menu > li {
+  font-family: var();
+}
+
+.b__home {
+  border: 1px solid var();
+  border-radius: 25px;
+  background-color: rgb(24, 80, 236);
+  padding: 0.4em 1em;
+  color: var();
+  cursor: pointer;
+}
+
+.principal__section {
+  background: url(../assets/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+  border: 1px solid rgb(216, 0, 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.hero > div {
+  text-align: center;
+  margin: 0;
+  width: 50%;
+  word-wrap: break-word;
+  font-size: 40px;
+}
+
+.hero > div > h1 {
+  margin: 0;
+  color: var(--white-color);
+  font-size: 70px;
+}
+
+.hero > div > p {
+  margin: 0;
+  color: var(--white-color);
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects__section > div {
+  margin: 20px;
+}
+
+.projects__section > div > div {
+  display: flex;
+  border-radius: 20px;
+  padding: 10px 0;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.hab__section > div {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    padding: 10px;
+}
+
+.hab__section > div > span {
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    word-wrap: break-word;
+}
+
+.footer {
+    padding: 50px 0 30px;
+    background-color: var(--footer_cyan-color);
+  }
+  
+  .footer > div {
+    display: flex;
+    gap: 50px;
+  }
+
+  h2::before {
+    .card__text::before {
+        content: '';
+        position: absolute;
+        left: 0.125rem;
+        bottom: -0.625rem;
+        width: 1rem;
+        height: 0.125rem;
+        background-color: blue;
+        }
+
+  }

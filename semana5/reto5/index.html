@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+<main class="h-screen bg-cover p-6" id="main">
+  <nav class="flex justify-between items-center nav">
+    <img src="./assets/shared/logo.svg" alt=""/>
+    <img src="./assets/shared/icon-hamburger.svg" alt="" class="lg:hidden" id="navIconMenu"/>
+    <div class="hidden lg:flex py-8 px-24 -mr-8 backdrop-blur-xl bg-white/5">
+      <ul class="text-white md:flex gap-10">
+        <li class="cursor-pointer hover:text-red-500">00 Home</li>
+        <li class="cursor-pointer" id="destination">01 Destination</li>
+        <li class="cursor-pointer">02 Crew</li>
+        <li class="cursor-pointer">03 Technology</li>
+      </ul>
+    </div>
+  </nav>
+  <section class="text-white text-center mt-[40px] uppercase md:flex md:items-center md:h-4/5">
+    <div class="md:w-1/2 md:m-auto md:text-left">
+      <p class="text-lg">So, you want to travel to</p>
+        <h1 class="text-8xl mt-5 lg:text-9xl">Space</h1>
+        <p class="normal-case mt-5 md:w-3/5">
+          Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!
+        </p>
+    </div>
+    <div class="m-auto">
+      <div class="mt-20 m-auto bg-white h-[150px] w-[150px] md:h-[300px] md:w-[300px] grid place-items-center rounded-full md:mt-0">
+        <h2 class="text-gray-950 text-xl letter-spacing-[2] md:text-3xl">Explore</h2>
+    </div>
+
+    </div>
+  </section>
+</main>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
