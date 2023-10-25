@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Counter, Footer, Header } from "./components";
 
 export default function App() {
-  const [name, setName] = useState("Linder");
+  const [name, setName] = useState("Paulo");
 
   // puedo agregar mas funciones
   const changeName = () => {
