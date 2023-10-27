@@ -30,5 +30,8 @@ describe("Render App component", () => {
         fireEvent.change(inputLastame, {target:{}});
         fireEvent.change(inputEmail, {target:{}});
         fireEvent.change(inputPassword, {target:{}});
+        
+        const button = screen.getByLabelText("Crear cuenta");
+        fireEvent.click(button);
     })
 })
