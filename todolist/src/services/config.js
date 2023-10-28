@@ -1,4 +1,4 @@
-const baseUrl = "https://65330113d80bd20280f63669.mockapi.io/";
+const baseUrl = "https://65273bec917d673fd76d82a2.mockapi.io/";
 
 export async function makeHttpRequest({ url, id, body, method = "GET" }) {
   const finalUrl = id ? `${url}/${id}` : url;

@@ -13,4 +13,4 @@ export default defineConfig({
     setupFiles: "./src/__test__/setup.js",
     globals: true,
   },
-})
+});

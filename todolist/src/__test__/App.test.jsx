@@ -1,37 +1,59 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { describe, it, expect, vi } from "vitest";
 import App from "../App";
+import { mockUserResponse } from "../mocks/mockUser";
+import { tasks } from "../mocks/mockTasks";
+
+// ejemplo de la respuesta de mockapi
 
 describe("Render App component", () => {
-    it("Test App flow", () => {
-        render(<App />);
-        const title = screen.getByText("Crear cuenta");
-        const button = screen.getByLabelText("Crear cuenta");
-        expect(title).toBeInTheDocument();
-        fireEvent.click(button);
-        const errors = screen.getAllByText("Este campo es requerido");
-        expect(errors).toHaveLength(4);
+  it("Test App flow", () => {
+    // llamando y ejecutando al componente
+    render(<App />); // estamos en sign up
+    // recordermos que screen es igual a la pantalla actual
+    const title = screen.getByText("Crear Cuenta");
+    const button = screen.getByLabelText("Crear cuenta");
+    // debemos esperar que title exista en el document
+    expect(title).toBeInTheDocument();
+    // estamos dando click al boton
+    fireEvent.click(button);
+    // debemos verificar que existar 4 mensajes de error
+    // all = todos
+    const errors = screen.getAllByText("Este campo es requerido");
+    expect(errors).toHaveLength(4);
+  });
+
+  it("Test SignUp", async () => {
+    const response = {
+      json: vi.fn().mockResolvedValue(mockUserResponse),
+    };
+
+    // global (servidor) = window (cliente)
+    global.fetch = vi.fn().mockResolvedValue(response);
+
+    render(<App />);
+
+    const inputName = screen.getByLabelText("name");
+    const inputLastname = screen.getByLabelText("lastname");
+    const inputEmail = screen.getByLabelText("email");
+    const inputPassword = screen.getByLabelText("password");
+
+    // escribir en los inputs
+    fireEvent.change(inputName, { target: { value: "Pepe" } });
+    fireEvent.change(inputLastname, { target: { value: "Perez" } });
+    fireEvent.change(inputEmail, { target: { value: "pepe@gmail.com" } });
+    fireEvent.change(inputPassword, { target: { value: "pepe12345" } });
+
+    const button = screen.getByLabelText("Crear cuenta");
+    fireEvent.click(button);
+
+    global.fetch = vi.fn().mockResolvedValue({
+      json: vi.fn().mockResolvedValue(tasks),
     });
 
-    it("Test SignUp", () => {
-        const response = {
-            json: vi.fn().mockResolvedValue(mockUserResponse),
-        }
+    await waitFor(() => expect(window.location.pathname).toBe("/"));
+  });
 
-        global.fetch = vi.fn().mockResolvedValue(response);
-
-        render(<App />);
-        const inputName = screen.getByLabelText("name");
-        const inputLastame = screen.getByLabelText("Lastname");
-        const inputEmail = screen.getByLabelText("email");
-        const inputPassword = screen.getByLabelText("password");
-    
-        fireEvent.change(inputName, {target: { value: "Pepe"}});
-        fireEvent.change(inputLastame, {target:{}});
-        fireEvent.change(inputEmail, {target:{}});
-        fireEvent.change(inputPassword, {target:{}});
-        
-        const button = screen.getByLabelText("Crear cuenta");
-        fireEvent.click(button);
-    })
-})
+  const homeTitle = screen.getByText("Crear tu tarea");
+  expect(homeTitle).toBeInTheDocument();
+});

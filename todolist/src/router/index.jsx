@@ -6,11 +6,13 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<MainLayout/>}/>
+        <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
-        <Route element={<AuthLayout/>}/>
+        </Route>
+        <Route element={<AuthLayout />}>
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/signup" element={<SignUpPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
