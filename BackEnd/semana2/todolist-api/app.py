@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask
 from app.routes.tasks import task_route
 
 
